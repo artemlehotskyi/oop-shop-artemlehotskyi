@@ -1,64 +1,64 @@
-# 🐍 Python OOP — Shop & User Management
+# 🐍 Python ООП — Магазин та Облік користувачів
 
-> Object-Oriented Programming tasks implemented in Python.  
-> Covers class inheritance, encapsulation, polymorphism and modular code structure.
-
----
-
-## 📦 Task 1 — Online Shop
-
-### What was done:
-- Created a base class `Shop` with attributes `shop_name`, `store_type`, `number_of_units`
-- Implemented methods `describe_shop()`, `open_shop()`, `set_number_of_units()`, `increment_number_of_units()`
-- Created multiple instances of `Shop`
-- Built a subclass `Discount` that inherits from `Shop` with a `discount_products` list and `get_discount_products()` method
-- Moved the `Shop` class to a separate module `shop.py` and imported it in `main_shop.py`
-
-### Files:
-| File | Description |
-|------|-------------|
-| `shop.py` | `Shop` and `Discount` classes |
-| `main_shop.py` | Imports `Shop`, creates `all_store` instance |
+> Завдання з об'єктно-орієнтованого програмування на Python.  
+> Охоплює спадкування класів, інкапсуляцію, поліморфізм та модульну структуру коду.
 
 ---
 
-## 👤 Task 2 — User Account Management
+## 📦 Завдання 1 — Онлайн-магазин
 
-### What was done:
-- Created a class `User` with attributes `first_name`, `last_name`, `email`, `age`, `password`, `phone_number`, `login_attempts`
-- Implemented methods `describe_user()`, `greetings_user()`, `increment_login_attempts()`, `reset_login_attempts()`
-- Created multiple user instances and called all methods
-- Built a subclass `Admin` that inherits from `User` with a `Privileges` object as an attribute
-- Created a separate class `Privileges` with a `privileges` list and `show_privileges()` method
-- Split classes into modules: `user.py` and `admin.py`, tested imports in `main_user.py`
+### Що було зроблено:
+- Створено базовий клас `Shop` з атрибутами `shop_name`, `store_type`, `number_of_units`
+- Реалізовано методи `describe_shop()`, `open_shop()`, `set_number_of_units()`, `increment_number_of_units()`
+- Створено декілька екземплярів класу `Shop`
+- Створено підклас `Discount`, що успадковує `Shop`, зі списком `discount_products` та методом `get_discount_products()`
+- Клас `Shop` перенесено в окремий модуль `shop.py` та імпортовано в `main_shop.py`
 
-### Files:
-| File | Description |
-|------|-------------|
-| `user.py` | `User` class |
-| `admin.py` | `Privileges` and `Admin` classes |
-| `main_user.py` | Imports `Admin`, calls `show_privileges()` |
+### Файли:
+| Файл | Опис |
+|------|------|
+| `shop.py` | Класи `Shop` та `Discount` |
+| `main_shop.py` | Імпорт `Shop`, створення екземпляру `all_store` |
 
 ---
 
-## 🚀 Concepts Covered
+## 👤 Завдання 2 — Облік користувачів
 
-- ✅ Classes & instances
-- ✅ `__init__` method & attributes
-- ✅ Instance methods
-- ✅ Default attribute values
-- ✅ Inheritance & `super()`
-- ✅ Composition (class as attribute of another class)
-- ✅ Modular code with `import`
+### Що було зроблено:
+- Створено клас `User` з атрибутами `first_name`, `last_name`, `email`, `age`, `password`, `phone_number`, `login_attempts`
+- Реалізовано методи `describe_user()`, `greetings_user()`, `increment_login_attempts()`, `reset_login_attempts()`
+- Створено декілька екземплярів користувачів та викликано всі методи
+- Створено підклас `Admin`, що успадковує `User`, з атрибутом `priv` типу `Privileges`
+- Створено окремий клас `Privileges` зі списком прав та методом `show_privileges()`
+- Класи розподілено по модулях: `user.py` та `admin.py`, перевірено імпорт у `main_user.py`
+
+### Файли:
+| Файл | Опис |
+|------|------|
+| `user.py` | Клас `User` |
+| `admin.py` | Класи `Privileges` та `Admin` |
+| `main_user.py` | Імпорт `Admin`, виклик `show_privileges()` |
 
 ---
 
-## ▶️ How to Run
+## 🚀 Концепції ООП
+
+- ✅ Класи та екземпляри
+- ✅ Метод `__init__` та атрибути
+- ✅ Методи екземпляра
+- ✅ Атрибути зі значенням за замовчуванням
+- ✅ Спадкування та `super()`
+- ✅ Композиція (клас як атрибут іншого класу)
+- ✅ Модульний код з `import`
+
+---
+
+## ▶️ Як запустити
 
 ```bash
-# Run Shop task
+# Запустити завдання магазину
 python main_shop.py
 
-# Run User task
+# Запустити завдання користувачів
 python main_user.py
 ```
